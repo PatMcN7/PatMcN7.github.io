@@ -5,9 +5,11 @@ body { margin: 0; min-height: 100svh; color: #111; font-family: Helvetica, Arial
 main { position: relative; width: fit-content; max-width: 100%; margin: 0; padding: clamp(70px, 16vh, 170px) 32px 100px clamp(28px, 10vw, 150px); z-index: 1; }
 h1 { font-size: clamp(30px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -1.8px; font-weight: 700; margin: 0 0 31px; }
 p { font-size: 16px; line-height: 1.65; margin: 0 0 18px; }
-nav { display: flex; gap: 22px; margin-top: 29px; font-size: 15px; }
+.intro > span { display: block; }
+.keep-together, .team { white-space: nowrap; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 29px; font-size: 15px; }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset: 5px; }
 #pause { position: fixed; right: 22px; bottom: 20px; z-index: 2; padding: 7px 9px; border: 0; background: rgba(255,255,255,.8); border-radius: 2px; color: #555; font: 11px Helvetica, Arial, sans-serif; cursor: pointer; }
-@media (max-width: 600px) { main { padding-top: 90px; padding-right: 28px; } h1 { letter-spacing: -1.1px; } p { font-size: 15px; } p br { display: none; } }
+@media (max-width: 600px) { main { padding-top: 90px; padding-right: 28px; } h1 { letter-spacing: -1.1px; text-wrap: balance; } p { font-size: 15px; text-wrap: pretty; } .intro > span { text-wrap: pretty; } .experience .team { display: block; } .desktop-comma { display: none; } }

@@ -1,6 +1,27 @@
-<p> Hello, my name is Patrick J. McNaughton<p/>
-<p>  <p/>
-<p> Sorry to disappoint if you were looking for something more about me.<p/>
-<p> The lack of CSS is intentional<p/>
-  
-<a href="https://github.com/PatMcN7">github</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Patrick McNaughton. Computer science at Purdue. Robotics, software, and other things.">
+  <title>Patrick McNaughton</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="paint.js" defer></script>
+</head>
+<body>
+  <canvas id="paint" aria-hidden="true"></canvas>
+  <main>
+    <h1>Patrick McNaughton</h1>
+    <p>I’m studying computer science at Purdue.<br>I like robotics, writing software, LLMs, and making things.</p>
+    <p>Previously Captain, Strategy Lead, Programmer, FRC Team 341</p>
+    <nav aria-label="Links">
+      <a href="https://www.linkedin.com/in/patrick-mcnaughton">linkedin</a>
+      <a href="https://github.com/PatMcN7">github</a>
+      <a href="resume.pdf">resume</a>
+      <a href="mailto:patmcn300@outlook.com">email</a>
+    </nav>
+  </main>
+  <button id="pause" type="button" aria-label="Pause background painting">Pause painting</button>
+</body>
+</html>
